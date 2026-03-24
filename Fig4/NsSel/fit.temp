@@ -1,0 +1,24 @@
+ #  ns.HisDc1_F106    -2.76(1)  0.440   #  ns1.HisDc1_F106    -1.70(1)  0.00456
+ #  ns.HisDc1_F108    -2.82(2)  0.501   #  ns1.HisDc1_F108    -1.83(3)  0.004567
+ #  ns.HisDc1_F125    -2.79(3)  0.707   #  ns1.HisDc1_F125    -1.83(1)  0.00411
+ #  ns.HisDc1_F142    -2.55(3)  0.0400  -3.24(2)  0.295     #  ns1.HisDc1_F142       -1.63(1)  0.000405
+ #  ns.HisDc1_F149    -2.56(3)  0.0296  -3.7(2)   2.193     #  ns1.HisDc1_F149       -1.62(2)  0.00028
+ #  ns.HisDc1_F157    -2.67(3)  0.594   #  ns1.HisDc1_F157     1.69(1)   0.001628   
+ #  ns.HisDc1_F198    -2.48(2)  0.323   -2.18(1) 0.102  #  ns1.HisDc1_F198   -1.75(3)  0.0046
+ #  ns.HisDc1_F202    -2.11(3)  0.1005   #  ns1.HisDc1_F202      -1.77(2)   0.00428
+ #  ns.HisDc1_F257    -2.51(1)  0.340(1) #  ns1.HisDc1_F257      -1.70(5)   0.00353
+
+f(x) = x**yh*a0 
+a0 =1.0 
+yh =-1.0
+begin= 32
+do for[end=64:256]{
+fit [begin:end] f(x) "ns1.HisDC1_F257" every::2 u 2:4 via yh,a0 
+set logscale
+plot \
+    "ns1.HisDC1_F257" every::2 u 2:4 pt 4 lc "red",\
+    f(x) dt 2 lw 4 lc "blue" 
+
+pause -1
+}
+
