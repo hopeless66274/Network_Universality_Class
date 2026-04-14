@@ -31,19 +31,21 @@ This repository provides the **simulation codes and data analysis pipelines** us
 
 ## Repository Structure
 
-├── prog/ # Fortran simulation codes
-└── Data_Plot/ # Data and plotting scripts for all figures
-├── Fig1/ # Python scripts and data for Fig.1
-├── Fig2/ # Python scripts and data for Fig.2
-├── Fig3/ # Python scripts and data for Fig.3
-├── Fig4/ # Python scripts and data for Fig.4
-├── Fig5/ # Python scripts and data for Fig.5
-├── FigS1/ # Supplementary Fig.S1
-├── FigS2/ # Supplementary Fig.S2
-├── FigS3/ # Supplementary Fig.S3
-├── FigS4/ # Supplementary Fig.S4
-├── FigS5/ # Supplementary Fig.S5
-└── FigS6/ # Supplementary Fig.S6
+```text
+.
+├── prog/           Fortran simulation codes
+└── Data_Plot/      Data and plotting scripts for all figures
+    ├── Fig1/       Python scripts and data for Fig.1
+    ├── Fig2/       Python scripts and data for Fig.2
+    ├── Fig3/       Python scripts and data for Fig.3
+    ├── Fig4/       Python scripts and data for Fig.4
+    ├── Fig5/       Python scripts and data for Fig.5
+    ├── FigS1/      Supplementary Fig.S1
+    ├── FigS2/      Supplementary Fig.S2
+    ├── FigS3/      Supplementary Fig.S3
+    ├── FigS4/      Supplementary Fig.S4
+    ├── FigS5/      Supplementary Fig.S5
+    └── FigS6/      Supplementary Fig.S6
 
 
 
