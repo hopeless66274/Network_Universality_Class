@@ -31,7 +31,6 @@ This repository provides the **simulation codes and data analysis pipelines** us
 
 ## Repository Structure
 
-```text
 .
 ├── prog/           Fortran simulation codes
 └── Data_Plot/      Data and plotting scripts for all figures
@@ -46,7 +45,6 @@ This repository provides the **simulation codes and data analysis pipelines** us
     ├── FigS4/      Supplementary Fig.S4
     ├── FigS5/      Supplementary Fig.S5
     └── FigS6/      Supplementary Fig.S6
-
 
 
 ---
